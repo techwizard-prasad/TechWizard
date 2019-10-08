@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TechWizard</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="./Assets/style.css" />
+  </head>
+  <body>
+    <aside>
+      <nav>
+        <img src="./Assets/ProfileImg.jpg" alt="Profile Image" />
+        <a href="#home">
+          <i class="material-icons md-36">home</i>
+          <p>Home</p>
+        </a>
+        <a href="#about">
+          <i class="material-icons md-36">person</i>
+          <p>About</p>
+        </a>
+        <a href="#folio">
+          <i class="material-icons md-36">image</i>
+          <p>Folio</p>
+        </a>
+        <a href="#contact">
+          <i class="material-icons md-36">mail</i>
+          <p>Contact</p>
+        </a>
+      </nav>
+    </aside>
+    <nav class="mobile-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#folio">Folio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <header class="home" id="home">
+        <br /><br />
+        <h1>Hi there, I'm Prasad</h1>
+        <h5>Developer</h5>
+        <img src="./Assets/ProfileImg.jpg" alt="Profile pic" />
+      </header>
+    </main>
+    <section class="about" id="about">
+      <h2>About Me!</h2>
+      <p>
+        <span>Hello! I'm Prasad Naik.</span>
+        And I love to be called Tech Wizard and thats exactly what my instagarm
+        handle is.
+      </p>
+      <p>
+        Also note that if you change the color of the icon's container, the
+        color of the icon changes too. Same things goes for shadow, and anything
+        else that gets inherited using CSS. The exception is the CSS font-size
+        property, which is always 24px, unless something else is specified.
+      </p>
+      <h3>My Skills</h3>
+      <p>React</p>
+      <div class="container">
+        <div class="skills react">50%</div>
+      </div>
+      <p>html</p>
+      <div class="container">
+        <div class="skills html">60%</div>
+      </div>
+      <p>Angular</p>
+      <div class="container">
+        <div class="skills angular">50%</div>
+      </div>
+      <p>Javascript</p>
+      <div class="container">
+        <div class="skills javascript">65%</div>
+      </div>
+    </section>
+
+    <section class="folio" id="folio">
+      <h2>Folio</h2>
+      <div class="row-halves">
+        <div class="col">
+          <img src="./Assets/ProfileImg.jpg" alt="Profile Image" />
+          <h3>Business</h3>
+          <p>
+            Building responsive applications
+          </p>
+        </div>
+        <div class="col">
+          <img src="./Assets/ProfileImg.jpg" alt="Profile Image" />
+          <h3>Mobile</h3>
+          <p>
+            Fully responsie mobile ready applications
+          </p>
+        </div>
+      </div>
+      <div class="row-halves">
+        <div class="col">
+          <img src="./Assets/ProfileImg.jpg" alt="Profile Image" />
+          <h3>UX Desion</h3>
+          <p>
+            Building responsive applications
+          </p>
+        </div>
+        <div class="col">
+          <img src="./Assets/ProfileImg.jpg" alt="Profile Image" />
+          <h3>Personal</h3>
+          <p>
+            Fully responsie mobile ready applications
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <div class="container">
+        <div>
+          <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" />
+            <label for="message">Message</label>
+            <textarea
+              name="mesage"
+              id="message"
+              style="height:200px"
+            ></textarea>
+            <input type="submit" value="Message" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="top-bar">
+        <a href="https://www.facebook.com/cooolprasad" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/_tech_wizard_/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/_tech_wizard_" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/reachnaikprasad/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </section>
+      <section class="bottom-bar">
+        <p>&copy 2019 | All rights reserved.</p>
+      </section>
+    </footer>
+  </body>
+</html>
