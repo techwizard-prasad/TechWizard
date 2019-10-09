@@ -13,8 +13,8 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background: #000;
-  color: white;
+  background: white;
+  color: #000;
   font-family: "Oxygen", sans-serif;
 }
 
@@ -28,8 +28,8 @@ img {
 
 .home img {
   width: 100%;
-  -webkit-filter: grayscale(100%) contrast(100%);
-  filter: grayscale(100%) contrast(200%) brightness(60%);
+  /* -webkit-filter: grayscale(100%) contrast(100%);
+  filter: grayscale(100%) contrast(200%) brightness(60%); */
 }
 
 .folio img {
@@ -73,22 +73,25 @@ aside p {
   padding: 0;
 }
 
+.home span {
+  color: #fa292a;
+}
 aside a:hover {
-  background: #000;
+  background: #fa8d8e;
 }
 
 aside nav a:nth-child(2) {
-  background: #000;
+  background: #fa292a;
 }
 
 aside nav a:nth-child(2):hover {
-  background: #b2b2b2;
+  background: #fa8d8e;
   color: #222;
 }
 
 main {
   max-width: 980px;
-  background: #000;
+  background: white;
   margin-left: 15%;
   padding: 12px 50px 12px 50px;
 }
@@ -143,7 +146,7 @@ header h5 {
 
 .about span {
   font-weight: 600;
-  color: white;
+  color: #fa292a;
 }
 
 .about h3 {
@@ -230,7 +233,7 @@ textarea {
 form input[type="text"]:focus,
 textarea:focus {
   outline: none;
-  border: 1px solid #009688;
+  border: 1px solid #fa8d8e;
 }
 
 input[type="submit"] {
@@ -254,7 +257,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #b2b2b2;
+  background-color: #fa8d8e;
   color: #222;
 }
 
@@ -266,7 +269,7 @@ input[type="submit"]:hover {
 }
 
 .footer {
-  border-top: 1px solid #222;
+  border-top: 1px solid white;
 }
 
 .top-bar {
@@ -284,11 +287,11 @@ input[type="submit"]:hover {
 
 .top-bar a:hover {
   transform: scale(1.1);
-  color: #009680;
+  color: #fa8d8e;
 }
 
 .bottom-bar {
-  background: #000;
+  background: white;
   font-size: 0.75em;
   text-align: center;
 }
@@ -324,10 +327,15 @@ input[type="submit"]:hover {
     font-size: 1em;
     letter-spacing: 2px;
   }
-
+  .about,
+  .contact,
+  .folio {
+    margin-left: 0%;
+    width: 100%;
+  }
   .mobile-nav {
     position: fixed;
-    widows: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     background: rgba(0, 0, 0, 0.8);
@@ -345,7 +353,16 @@ input[type="submit"]:hover {
   }
 
   .mobile-nav a:hover {
-    background: #b2b2b2;
+    background: #fa8d8e;
+    color: #222;
+  }
+
+  .mobile-nav a:nth-child(1) {
+    background: #fa292a;
+  }
+
+  .mobile-nav a:nth-child(1):hover {
+    background: #fa8d8e;
     color: #222;
   }
 }
