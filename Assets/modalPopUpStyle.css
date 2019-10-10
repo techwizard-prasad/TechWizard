@@ -1,0 +1,22 @@
+body {
+  font-family: "Oxygen", sans-serif;
+  margin: 0;
+}
+.container {
+  padding-left: 15px;
+}
+.degreeName {
+  color: #fa292a;
+}
+.degree h3,
+.degree h4 {
+  margin: 7px 3px;
+}
+
+.degree {
+  padding: 10px 0;
+}
+
+.degree h6 {
+  color: #444;
+}

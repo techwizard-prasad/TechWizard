@@ -32,10 +32,6 @@ img {
   filter: grayscale(100%) contrast(200%) brightness(60%); */
 }
 
-.folio img {
-  filter: grayscale(100%);
-}
-
 aside {
   position: fixed;
   background: #222;
@@ -370,5 +366,131 @@ input[type="submit"]:hover {
 @media (min-width: 600px) {
   .mobile-nav {
     display: none;
+  }
+}
+/* Download Resume */
+
+.DownloadResume {
+  bottom: 0;
+  position: fixed;
+  margin: 1em;
+  right: 0px;
+}
+
+.buttons {
+  box-shadow: 0px 5px 11px -2px rgba(0, 0, 0, 0.18),
+    0px 4px 12px -7px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  display: block;
+  width: 56px;
+  height: 56px;
+  margin: 20px auto 0;
+  position: relative;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  background-color: #fa292a;
+}
+
+.buttons:active,
+.buttons:focus,
+.buttons:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.14), 0 4px 12px rgba(0, 0, 0, 0.5);
+  background-color: #000;
+}
+
+.buttons {
+  background-size: contain;
+  text-align: center;
+}
+
+.buttons h1 {
+  margin-top: 50%;
+  transform: translate(0, -50%);
+  color: white;
+}
+.buttons h1:hover {
+  color: #fa292a;
+}
+/*Modal popup styling*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 0.5%;
+}
+
+.close:hover,
+.close:focus {
+  color: #fa292a;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Header */
+.modal-header {
+  padding: 2px 16px;
+  background-color: #000;
+  color: white;
+  height: 6%;
+}
+.modal-header h2 {
+  margin-top: 5px;
+  text-decoration: none;
+}
+/* Modal Body */
+.modal-body {
+  padding: 2px 0;
+  width: 100%;
+  height: 94%;
+}
+
+/* Modal Footer */
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #000;
+  color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #000;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.5s;
+  height: 90%;
+  top: 5%;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    height: 90%;
+    width: 90%;
+    opacity: 1;
   }
 }
