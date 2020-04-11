@@ -20,3 +20,22 @@ body {
 .degree h6 {
   color: #444;
 }
+
+.top-bar {
+  padding: 0;
+  text-align: center;
+  font-size: 10px;
+}
+
+.top-bar a {
+  margin: 10px;
+  font-size: 2em;
+  color: #b2b2b2;
+  transition: all 0.35s;
+  display: inline-block;
+}
+
+.top-bar a:hover {
+  transform: scale(1.1);
+  color: #fa8d8e;
+}
