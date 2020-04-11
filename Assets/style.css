@@ -86,17 +86,30 @@ aside nav a:nth-child(2):hover {
 }
 
 main {
-  max-width: 980px;
+  /* max-width: 980px; */
+  width: 100%;
   background: white;
-  margin-left: 15%;
+  display: contents;
+  margin: auto;
   padding: 12px 50px 12px 50px;
+}
+
+.name {
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%);
+}
+
+.profile-pic{
+  transform: translate(0, -200px);
 }
 
 .about,
 .contact,
 .folio {
   max-width: 980px;
-  margin-left: 15%;
+  margin: auto;
   padding: 12px 50px 12px 50px;
 }
 header {
@@ -182,6 +195,10 @@ header h5 {
 
 .col-2 .skillCol {
   width: 49%;
+}
+
+.col-3 .skillCol {
+  width: 33%;
 }
 
 .skillCol {
@@ -376,8 +393,20 @@ input[type="submit"]:hover {
     padding: 12px 25px;
   }
 
+  .name {
+    position: inherit;
+    left: inherit;
+    z-index: 1;
+    transform: inherit;
+  }
+  
+  .profile-pic{
+    transform: inherit;
+  }
+  
+
   header {
-    margin-top: 80px;
+    margin-top: 0;
   }
   header h1 {
     font-size: 3em;

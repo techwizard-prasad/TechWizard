@@ -46,9 +46,11 @@
     <main>
       <header class="home" id="home">
         <br /><br />
-        <h1>Hi there, <span>I'm Prasad</span></h1>
-        <h5>Developer</h5>
-        <img src="./Assets/Prasad1.png" alt="Profile pic" />
+        <div class="name">
+          <h1>Hi there, <span>I'm Prasad</span></h1>
+          <h5>Developer</h5>
+        </div>
+        <img src="./Assets/Prasad1.png" alt="Profile pic" class="profile-pic" />
       </header>
     </main>
     <section class="about" id="about">
@@ -119,8 +121,13 @@
 
       <div class="skills">
           <h3>Database</h3>
-          <div class="row-halves col-2">
-            
+          <div class="row-halves col-3">
+            <div class="skillCol">
+              <div class="DatabaseDiv">
+                  <img src="./Assets/mongodb.png" alt="MongoDB" title="MongoDB" class="DatabaseOrig">
+                  <img src="./Assets/mongodb.png" alt="MongoDB" title="MongoDB" class="DatabaseTop">
+              </div>
+          </div>
             <div class="skillCol">
                 <div class="DatabaseDiv">
                     <img src="./Assets/SQLServer.png" alt="SQLServer" title="SQLServer" class="DatabaseOrig">
@@ -142,8 +149,29 @@
     <section class="folio" id="folio">
       <h2>Folio</h2>
       <div class="row-halves">
+        <div class="col" onclick="showModalPopup('ExperienceModalPopup')">
+          <img src="./Assets/Education.jpg" alt="Experience" />
+          <h3>Experience</h3>
+          <p>
+            I am still in early phase of my carrier in industry. Currently working in Bangalore based start-up,
+            'Go Swift', majorly working in front-end. Previously worked in Goa based IT company, 'Open Destinations Ltd'.
+            Where my role was Software Developer.
+          </p>
+        </div>
+        <div id="ExperienceModalPopup" class="modal">
+          <div class="modal-content">
+            <div class="modal-header popup">
+              <span class="close" onclick="closeModal('ExperienceModalPopup')"
+                >&times;</span
+              >
+              <h2>Experience</h2>
+            </div>
+            <iframe src="./Experience.html" frameborder="0" class="modal-body">
+            </iframe>
+          </div>
+        </div>
         <div class="col" onclick="showModalPopup('EducationModalPopup')">
-          <img src="./Assets/Education.jpg" alt="Profile Image" />
+          <img src="./Assets/Education.jpg" alt="Education" />
           <h3>Education</h3>
           <p>
             Though I am not a big fan of memorising theory and dates and stuff,
@@ -162,17 +190,7 @@
             </div>
             <iframe src="./Education.html" frameborder="0" class="modal-body">
             </iframe>
-            <!-- <div class="modal-footer">
-              <h3>footer</h3>
-            </div> -->
           </div>
-        </div>
-        <div class="col">
-          <img src="./Assets/ProfileImg.jpg" alt="Profile Image" />
-          <h3>Mobile</h3>
-          <p>
-            Fully responsie mobile ready applications
-          </p>
         </div>
       </div>
       <div class="row-halves">
