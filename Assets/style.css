@@ -401,9 +401,16 @@ input[type="submit"]:hover {
 
   .name {
     position: absolute;
-    left: 50%;
+    left: inherit;
     z-index: 1;
-    transform: translate(-50%);
+    transform: inherit;
+  }
+
+  header h5 {
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 4px;
+    color: #333;
   }
 
   .profile-pic {
