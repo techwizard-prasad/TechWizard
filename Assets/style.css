@@ -444,7 +444,7 @@ input[type="submit"]:hover {
     display: flex;
     justify-content: space-around;
     background: rgba(0, 0, 0, 0.8);
-    z-index: 1;
+    z-index: 2;
   }
   .mobile-nav a {
     width: 100%;
@@ -472,8 +472,6 @@ input[type="submit"]:hover {
   }
   .skills .row-halves {
     height: auto;
-    margin-left: 50%;
-    transform: translate(-50%);
   }
 
   .skillCol i {
